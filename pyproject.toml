@@ -1,0 +1,37 @@
+[project]
+name = "zhime"
+version = "0.1.0"
+description = "Typo-tolerant Zhuyin + English smart input method for Windows (PIME backend)"
+readme = "README.md"
+authors = [
+    { name = "buddy", email = "252594523+Buddy-Lu@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+license = "MIT"
+dependencies = [
+    "numpy>=2.0",
+    "wordfreq>=3.1.1",
+]
+
+[project.optional-dependencies]
+# neural reranker (ZHIME_RERANK=1)
+rerank = ["torch>=2.14.0", "transformers>=5.17.0"]
+# rebuilding data/bigram.pkl: python -m zhime.ngram build
+build = ["huggingface-hub>=1.33.0", "pyarrow>=25.0.1"]
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+
+[dependency-groups]
+dev = [
+    "pillow>=12.3.0",
+]

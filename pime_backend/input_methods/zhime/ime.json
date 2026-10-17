@@ -1,0 +1,11 @@
+{
+    "name": "智慧注音 (zhime)",
+    "version": "0.1",
+    "guid": "{91C07699-318C-401B-B934-56EF6706DA0B}",
+    "locale": "zh-Hant-TW",
+    "fallbackLocale": "zh-TW",
+    "icon": "icon.ico",
+    "win8_icon": "",
+    "moduleName": "zhime_ime",
+    "serviceName": "ZhimeTextService"
+}

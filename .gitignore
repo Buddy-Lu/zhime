@@ -1,0 +1,7 @@
+__pycache__/
+.venv/
+data/
+downloads/
+dist/
+third_party/
+install/install.log

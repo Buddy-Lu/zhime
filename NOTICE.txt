@@ -1,0 +1,26 @@
+zhime 使用了以下第三方程式與資料 / Third-party code and data used by zhime
+
+zhime 本身的程式碼採 MIT 授權（見 LICENSE）。以下各項保留其原本的授權：
+
+1. PIME (https://github.com/EasyIME/PIME) — LGPL 2.0 / 2.1
+   pime_backend/ 裡的 server.py、serviceManager.py、textService.py、keycodes.py
+   複製自 PIME，保留原本的授權標頭。PIME 本體不隨本軟體附帶，需另外安裝。
+
+2. McBopomofo 小麥注音詞庫 (https://github.com/openvanilla/McBopomofo) — MIT
+   Copyright (c) 2011-2026 Mengjuei Hsieh et al.
+   data/lexicon.pkl 由其 Source/Data/data.txt 轉換而成。
+
+3. wordfreq (https://github.com/rspeer/wordfreq) — 程式 Apache-2.0，
+   詞頻資料 CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)。
+   英文單字與詞頻來自 wordfreq。
+
+4. PTT-pretrain-zhtw 資料集 (https://huggingface.co/datasets/yuhuanstudio/PTT-pretrain-zhtw)
+   — Apache-2.0。data/bigram.pkl 的詞頻統計部分來自此資料集。
+
+5. 中文維基百科 (透過 https://huggingface.co/datasets/zetavg/zh-tw-wikipedia)
+   — 維基百科內容採 CC BY-SA 4.0。data/bigram.pkl 的詞頻統計部分來自此內容；
+   bigram.pkl 依 CC BY-SA 4.0 釋出。
+
+6. Python (https://www.python.org/) — PSF License；
+   NumPy (https://numpy.org/) — BSD-3-Clause。
+   安裝包內附的 Python 執行環境與套件，各自的授權檔在 zhime/python/ 裡。
