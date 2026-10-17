@@ -1,3 +1,5 @@
+[English](README.en.md) | 中文
+
 # zhime 智慧注音
 
 打錯字也猜得出來的 Windows 注音輸入法，中英文不用切換。
